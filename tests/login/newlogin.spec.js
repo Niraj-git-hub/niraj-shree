@@ -27,7 +27,7 @@ test.describe('Invalid login tests',()=>{
     });
      test('Login using invalid login/loginusername and invalid password', async({page})=>{
         const login=new LoginPage(page);
-        await login.login(testData.invalidUser.username,testData.invalidUser.password);
+        await login.login(testData.invalidUser.username,testData.invalidUser.passwords);
         
     });
 }) 
